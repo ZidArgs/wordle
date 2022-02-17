@@ -4,11 +4,14 @@ import FileLoader from "../util/FileLoader.js";
 import CustomElement from "./CustomElement.js";
 import GameConstants from "../GameConstants.js";
 import Toast from "./overlay/message/Toast.js";
+import Path from "../util/Path.js";
 import "./ScreenKeyboard.js";
 import "./FieldRow.js";
 import "./overlay/window/WindowLayer.js";
 import "./overlay/message/MessageLayer.js";
 import Dialog from "./overlay/window/Dialog.js";
+
+const path = new Path(import.meta.url);
 
 const TPL = new Template(`
 <div id="game">
@@ -89,9 +92,9 @@ async function loadConfig(lang) {
         words,
         translations
     ] = await Promise.all([
-        FileLoader.json(`/config/${lang}/keyboard.json`),
-        FileLoader.json(`/config/${lang}/words.json`),
-        FileLoader.json(`/config/${lang}/translations.json`)
+        FileLoader.json(path.getAbsolute(`../config/${lang}/keyboard.json`)),
+        FileLoader.json(path.getAbsolute(`../config/${lang}/words.json`)),
+        FileLoader.json(path.getAbsolute(`../config/${lang}/translations.json`))
     ]);
     return {
         keyboard,
