@@ -1,0 +1,28 @@
+{
+  "name": "js-template",
+  "version": "0.0.0",
+  "description": "Template for JS projects",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/zidargs/js-template.git"
+  },
+  "author": "Denis Peters (ZidArgs)",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/zidargs/js-template/src",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-syntax-top-level-await": "^7.14.5",
+    "eslint": "^8.0.0"
+  },
+  "exports": {
+    "./*": "./src/*"
+  },
+  "scripts": {
+    "lint": "yarn eslint .",
+    "lintfix": "yarn eslint --fix .",
+    "serve": "serve -p 42096 ./src"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "missing_letters": "Not enough letters",
+    "not_in_list": "Not in word list",
+    "win_game_title": "Yeah, you win :D",
+    "win_game_message": "Perfect, you found the correct word\n\nThe solution was:\n\n",
+    "lose_game_title": "Shame, you lost :(",
+    "lose_game_message": "Next time you got this\n\nThe solution was:\n\n"
+}

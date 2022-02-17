@@ -1,0 +1,8 @@
+{
+    "missing_letters": "Nicht genug Buchstaben",
+    "not_in_list": "Nicht in der Wortliste",
+    "win_game_title": "Hurra, gewonnen :D",
+    "win_game_message": "Sehr gut, das Wort wurde gefunden\n\nDas gesuchte Wort war:\n\n",
+    "lose_game_title": "Schade, verloren :(",
+    "lose_game_message": "Beim nächsten mal klappt es bestimmt\n\nDas gesuchte Wort war:\n\n"
+}
